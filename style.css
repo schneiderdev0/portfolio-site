@@ -7,7 +7,16 @@
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;*/
     font-family: "Ubuntu Mono";
 }
+h1 {
+    font-size: 48px;
+}
+body {
+    background-color: white;
+}
 h2 {
+    font-size: 20px;
+}
+p {
     font-size: 18px;
 }
 a {
@@ -16,17 +25,25 @@ a {
 li {
     list-style: inside;
     list-style-type: square;
+    font-size: 18px;
 }
 header {
-    padding: 2vh;
-    background-color: black;
-    color: white;
-    font-size: 24px;
+    height: 32vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100wh;
+    padding: 2vh 0;
+    color: black;
+}
+main {
+    height: 58vh;
 }
 hr {
     margin: 0px -24px 0px;
     border: 0;
     border-top: 2px solid black;
+    margin-top: 2px;
     margin-bottom: 4px;
 }
 
@@ -40,16 +57,22 @@ hr {
     align-items: end;
 }
 .block {
-    margin: 22px 0;
+    background-color: white;
+    z-index: 1;
+    /*margin: 22px 0;*/
     width: 380px;
     border: solid black 2px;
     padding: 0px 24px 20px 24px;
     box-shadow: 12px 12px 0px -1px rgba(0, 0, 0, 0.97);
     transition: 0.2s ease-in-out;
 }
+.block-hello {
+    padding: 4px 12px;
+    /*text-align: center;*/
+}
 
 .block:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 .block-header {
     height: 12px;
@@ -70,4 +93,31 @@ hr {
 }
 .username {
     font-size: 18px;
+}
+.dots {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.25) 1px, transparent 1px);
+    background-size: 4px 4px;
+    background-color: #ffffff;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 32px;
+    height: 2vh;
+    background-color: white;
+    border: solid 2px black;
+    box-shadow: 8px 6px 0px -1px rgba(0, 0, 0, 0.97);
+    transition: 0.2s ease-in-out;
+}
+
+footer:hover {
+    transform: scale(1.05);
 }
