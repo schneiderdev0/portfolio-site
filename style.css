@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    /*font-family:
+        "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;*/
+    font-family: "Ubuntu Mono";
+}
+h2 {
+    font-size: 18px;
+}
+a {
+    color: black;
+}
+li {
+    list-style: inside;
+    list-style-type: square;
+}
+header {
+    padding: 2vh;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+}
+hr {
+    margin: 0px -24px 0px;
+    border: 0;
+    border-top: 2px solid black;
+    margin-bottom: 4px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.block {
+    margin: 22px 0;
+    width: 380px;
+    border: solid black 2px;
+    padding: 0px 24px 20px 24px;
+    box-shadow: 12px 12px 0px -1px rgba(0, 0, 0, 0.97);
+    transition: 0.2s ease-in-out;
+}
+
+.block:hover {
+    transform: scale(1.1);
+}
+.block-header {
+    height: 12px;
+    width: 100%;
+    background-color: black;
+}
+
+.profile {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+    margin-top: 8px;
+}
+.profile-right {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.username {
+    font-size: 18px;
+}
