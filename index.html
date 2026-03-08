@@ -1,108 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Онлайн-учебник Информатики</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
-        rel="stylesheet">
+    <title>Евгений Шнайдер | Портфолио</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
-<body>
-    <main>
-        <div class="pop_up">
-            <div class="pop_up_about">
-                <p>Онлайн-учебник информатики</p>
-                <p>Автор: Шнайдер Евгений</p>
-                <p>Группа: ПО-32-9</p>
-                <p>Создано в 2024 году</p>
-                <button class="btn1" onclick="closePopUpAbout()">Закрыть</button>
+<body data-page="index">
+    <div class="dots" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <nav aria-label="Основная навигация">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">Обо мне</a></li>
+                <li><a href="projects.html">Мои проекты</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Переключить тему">Тёмная тема</button>
+    </header>
+
+    <main class="home-main">
+        <section class="hero">
+            <div class="block">
+                <h1>Привет, Мир!</h1>
             </div>
-        </div>
-        <div class="floating_buttons">
-            <a href="#" onclick="openPopUpAbout()">Об учебнике</a>
-        </div>
-        <header>
-            <h1>Онлайн-учебник Информатики</h1>
-
-        </header>
-        <article class="welcomeText">
-            <p>Вы находитесь на главной странице онлайн-учебника по Информатике</p>
-            <p>Данный учебник познакомит вас со следующими темами:</p>
-        </article>
-
-        <section class="lessons">
-
-            <article class="chapterBlock firstChapter">
-                <div class="chapter_description">
-                    <h2>Глава 1</h2>
-                    <p>В этой главе мы изучим программы из офисного пакета Mircosoft, их функционал и возможности</p>
-                </div>
-                <div class="chapter_lessons">
-                    <ul class="lessonsList">
-                        <li><a href="lessons/first_chapter/lesson_1.html"><span>Урок 1.</span> Офисный пакет Microsoft
-                                Office</a></li>
-                        <li><a href="lessons/first_chapter/lesson_2.html"><span>Урок 2.</span> Microsoft Word</a></li>
-                        <li><a href="lessons/first_chapter/lesson_3.html"><span>Урок 3.</span> Microsoft PowerPoint</a>
-                        </li>
-                        <li><a href="lessons/first_chapter/lesson_4.html"><span>Урок 4.</span> Microsoft Excel</a></li>
-                    </ul>
-                </div>
-                <hr>
-            </article>
-
-            <article class="chapterBlock chapterBlock--reverse">
-                <div class="chapter_description">
-                    <h2>Глава 2</h2>
-                    <p>В этой главе мы узнаем о языках программирования, их видах и расмотрим два языка
-                        программирования: Python и C++</p>
-                </div>
-                <div class="chapter_lessons">
-                    <ul class="lessonsList">
-                        <li><a href="./lessons/second_chapter/lesson_1.html"><span>Урок 1.</span> Языки программирования и их виды&nbsp;</a></li>
-                        <li><a href="./lessons/second_chapter/lesson_2.html"><span>Урок 2.</span> Основы Python&nbsp;</a></li>
-                        <li><a href="./lessons/second_chapter/lesson_3.html"><span>Урок 3.</span> Основы C++&nbsp;</a></li>
-                    </ul>
-                </div>
-                <hr>
-            </article>
-            <article class="chapterBlock">
-                <div class="chapter_description">
-                    <h2>Глава 3</h2>
-                    <p>В этой главе будут расмотрены популярные операционные системы: Windows, MacOS и дистрибутивы
-                        Linux</p>
-                </div>
-                <div class="chapter_lessons">
-                    <ul class="lessonsList">
-                        <li><a href="lessons/third_chapter/lesson_1.html"><span>Урок 1.</span> Операционные системы и их виды</a></li>
-                        <li><a href="lessons/third_chapter/lesson_2.html"><span>Урок 2.</span> Microsoft Windows</a></li>
-                        <li><a href="lessons/third_chapter/lesson_3.html"><span>Урок 2.</span> Дистрибутивы Linux</a></li>
-                        <li><a href="lessons/third_chapter/lesson_4.html"><span>Урок 4.</span> MacOs</a></li>
-                    </ul>
-                </div>
-                <hr>
-            </article>
-            <article class="chapterBlock chapterBlock--reverse">
-                <div class="chapter_description">
-                    <h2>Глава 4</h2>
-                    <p>В этой главе будут расмотрены интернет безопасность и сертификаты HTTPS</p>
-                </div>
-                <div class="chapter_lessons">
-                    <ul class="lessonsList">
-                        <li><a href="lessons/fourth_chapter/lesson_1.html"><span>Урок 1.</span> Базовые правила безопасности в сети&nbsp;</a></li>
-                        <li><a href="lessons/fourth_chapter/lesson_2.html"><span>Урок 2.</span> Протокол HTTPS и SSL сертификат&nbsp;</a></li>
-                        <li><a href="lessons/fourth_chapter/lesson_3.html"><span>Урок 3.</span> Брэндмауер&nbsp;</a></li>
-                    </ul>
-                </div>
-            </article>
+            <div class="block">
+                <p>Добро пожаловать на мой сайт-портфолио.</p>
+            </div>
+            <figure class="profile-photo block">
+                <img src="assets/avatar.jpg" alt="Портрет Евгения Шнайдера" width="220" height="220">
+            </figure>
         </section>
-        <div id="up"><img src="./assets/arrowUp.png" alt="Наверх"></div>
     </main>
+
+    <footer class="site-footer">
+        <b id="current-year">2026</b>
+        <b>schneider.dev</b>
+    </footer>
 </body>
-<script src="script.js"></script>
 
 </html>
